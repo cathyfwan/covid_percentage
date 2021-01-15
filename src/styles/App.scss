@@ -1,0 +1,80 @@
+* {
+  font-family: 'EB Garamond', serif;
+font-family: 'Raleway', sans-serif;
+}
+
+.App {
+  max-width: 600px;
+  margin: auto;
+
+  .live {
+    padding: 3px;
+    margin: 10px 5px;
+    font-size: 15px;
+    background-color: #ff9b71;
+    border-radius: 5px;
+    color: rgb(48, 42, 42);
+  }
+
+  .title {
+    margin: 10px 5px;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  table {
+    margin: 5px;
+    width: 100%;
+
+    td {
+      border-bottom: solid 1px grey;
+    }
+  
+    th {
+      text-align: left;
+    }
+  
+    .rank {
+      width: 10%;
+    }
+  
+    .country {
+      width: 40%;
+    }
+  
+    .cases {
+      width: 25%;
+    }
+  
+    .percentage {
+       width: 25%;
+    }
+  }
+
+  .btnBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    button {
+      padding: 5px;
+      border: none;
+      text-decoration: underline;
+      color: #3caea3;
+      background: none;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+
+  &.searched {
+    .title {
+      display: none;
+    }
+
+    .btnBox button.next {
+      color: grey;
+    }
+  }
+}
